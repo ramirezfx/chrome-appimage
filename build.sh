@@ -1,6 +1,7 @@
 #!/bin/bash
 DIST=kinetic
-WORKDIR=google-chrome-stable
+WORKDIR=$(cat chrome.yml.template | grep app: | cut -d " " -f 2)
+#WORKDIR=google-chrome-stable
 # Cleanup
 rm -Rf $WORKDIR
 rm chrome.yml
