@@ -21,6 +21,7 @@ chmod 700 pkg2appimage-1807-x86_64.AppImage
 cd out
 CHROMENAME=$(ls Google*)
 mv $CHROMENAME google-chrome-latest.Appimage
+chmod +x google-chrome-latest.Appimage
 mv google-chrome-latest.Appimage ..
 cd ..
 #Cleanup
